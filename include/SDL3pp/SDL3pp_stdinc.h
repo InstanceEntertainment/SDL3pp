@@ -561,7 +561,7 @@ constexpr Time MIN_TIME = Time::FromNS(SDL_MIN_TIME);
  *
  * @since This constant is available since SDL 3.2.0.
  */
-constexpr float FLT_EPSILON = SDL_FLT_EPSILON;
+// constexpr float FLT_EPSILON = SDL_FLT_EPSILON;
 
 /**
  * Concept of interface

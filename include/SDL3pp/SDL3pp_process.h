@@ -412,14 +412,14 @@ public:
    *
    * @sa ProcessRef.Create
    */
-  template<class T>
-  OwnArray<T> ReadAs(int* exitcode = nullptr)
-  {
-    StringResult data = Read(exitcode);
-    if (data.empty()) return {};
-    size_t sz = data.size() / sizeof(T);
-    return OwnArray{static_cast<T*>(data.release()), sz};
-  }
+  // template<class T>
+  // OwnArray<T> ReadAs(int* exitcode = nullptr)
+  // {
+  //   OwnArray<std::byte> data = Read(exitcode);
+  //   if (data.empty()) return {};
+  //   size_t sz = data.size() / sizeof(T);
+  //   return OwnArray{static_cast<T*>(data.release()), sz};
+  // }
 
   /**
    * Get the IOStream associated with process standard input.
